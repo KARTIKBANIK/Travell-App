@@ -4,11 +4,11 @@ import 'package:travell/Screens/hotel.dart';
 import 'package:travell/Screens/sidebar.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
 
   // This widget is the root of your application.
   @override

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:travell/Screens/sidebar.dart';
 
 class ActivitiesScreens extends StatefulWidget {
   static var routeName;
@@ -17,22 +16,31 @@ class _ActivitiesScreensState extends State<ActivitiesScreens> {
     double heigth = MediaQuery.of(context).size.height;
     return SingleChildScrollView(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
             height: 50,
           ),
-          Text(
-            "Activities",
-            style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                  fontWeight: FontWeight.bold,
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Activities",
+                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
                 ),
-          ),
-          SizedBox(
-            height: 5,
-          ),
-          Text(
-            "Enjoy your holiday in Coxsbazar",
-            style: Theme.of(context).textTheme.bodySmall,
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  "Enjoy your holiday in Coxsbazar",
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ],
+            ),
           ),
         ],
       ),
